@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Básico -->
+    <title>Criação de Landing Pages Profissionais | Eduardo Gabriel</title>
+    <meta name="description" content="Desenvolvimento de landing pages rápidas, modernas e focadas em conversão. Transforme visitantes em clientes para o seu negócio.">
+    <meta name="keywords" content="desenvolvedor, full-stack, landing page, criação de sites, html, css, javascript, java, python, php, ifrs, freelancer">
+    <meta name="author" content="Eduardo Gabriel Teixeira">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Criação de Landing Pages que Transformam Visitantes em Clientes">
+    <meta property="og:description" content="Sites rápidos, modernos e otimizados para converter. Desenvolvimento focado em design responsivo e integração com WhatsApp.">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap Icons & FontAwesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS Principal -->
+    <link rel="stylesheet" href="style.css?v=3">
+</head>
+<body>
+
+    <!-- ==================== HEADER ==================== -->
+    <header>
+        <div class="interface flex">
+            <div class="logo">
+                <a href="#inicio">
+                    <img src="images/logo.jpg" alt="Logo Eduardo Gabriel">
+                </a>
+            </div>
+
+            <nav class="menu-desktop" aria-label="Menu Principal">
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#especialidades">Especialidades</a></li>
+                    <li><a href="#certificacoes">Certificações</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                </ul>
+            </nav>
+
+            <div class="btn-contato">
+                <a href="#contato">
+                    <button type="button">Solicitar Orçamento</button>
+                </a>
+            </div>
+
+            <button class="btn-abrir" id="btn-menu" aria-label="Abrir menu mobile" aria-expanded="false">
+                <i class="bi bi-list"></i>
+            </button>
+
+            <div class="menu-mobile" id="menu-mobile" aria-hidden="true">
+                <div class="btn-fechar" id="btn-fechar" role="button" tabindex="0" aria-label="Fechar menu mobile">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+                <nav aria-label="Menu Mobile">
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#especialidades">Especialidades</a></li>
+                        <li><a href="#certificacoes">Certificações</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="overlay-menu" id="overlay-menu"></div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ==================== TOPO / HERO ==================== -->
+        <section class="topo-do-site" id="inicio">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-top-site efeito-txt-site">
+                        <span class="badge-topo">👋 Olá, eu sou Eduardo Gabriel</span>
+                        <h1>Criação de Landing Pages que <span>Transformam Visitantes em Clientes.</span></h1>
+                        <p>Páginas de alta conversão com <strong>carregamento ultrarrápido</strong>, design persuasivo e <strong>integração direta ao WhatsApp</strong> para o seu negócio vender todos os dias.</p>
+                        
+                        <div class="botoes-hero">
+                            <a href="#contato" class="btn-primario"><i class="bi bi-whatsapp"></i> Solicitar Orçamento</a>
+                            <a href="#projetos" class="btn-secundario">Ver Portfólio</a>
+                        </div>
+
+                        <div class="metricas-hero">
+                            <div class="metrica">
+                                <strong>&lt; 2s</strong>
+                                <span>Tempo de Carga</span>
+                            </div>
+                            <div class="metrica">
+                                <strong>100%</strong>
+                                <span>Mobile First</span>
+                            </div>
+                            <div class="metrica">
+                                <strong>CRO &amp; SEO</strong>
+                                <span>Foco em Vendas</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="imagem-topo-site efeito-img-top">
+                        <div class="hero-showcase">
+                            <img src="images/perfil.jpg" alt="Eduardo Gabriel - Especialista em Landing Pages">
+                            <div class="floating-card card-top">
+                                <i class="bi bi-graph-up-arrow"></i>
+                                <div>
+                                    <strong>Alta Conversão</strong>
+                                    <span>Estrutura validada</span>
+                                </div>
+                            </div>
+                            <div class="floating-card card-bottom">
+                                <i class="bi bi-shield-check"></i>
+                                <div>
+                                    <strong>Código Seguro</strong>
+                                    <span>Performance máxima</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== ESPECIALIDADES ==================== -->
+        <section class="especialidades" id="especialidades">
+            <div class="interface">
+                <h2 class="titulo">MINHAS <span>ESPECIALIDADES</span></h2>
+                <p class="subtitulo">Soluções completas do design estratégico à implementação full-stack</p>
+
+                <div class="flex cards-especialidades">
+                    <div class="especialidades-box efeito-especialidades1">
+                        <i class="bi bi-window-fullscreen"></i>
+                        <h3>Landing Pages de Alta Conversão</h3>
+                        <p>Páginas projetadas com gatilhos visuais, velocidade extrema e integração direta com WhatsApp e CRM para captar leads qualificados.</p>
+                    </div>
+
+                    <div class="especialidades-box efeito-especialidades2">
+                        <i class="bi bi-hdd-network"></i>
+                        <h3>Sistemas Web &amp; Automação</h3>
+                        <p>APIs robustas, web scrapers, integrações de dados e lógica de negócio sob medida utilizando Node.js, Python, PHP e Java.</p>
+                    </div>
+
+                    <div class="especialidades-box efeito-especialidades3">
+                        <i class="bi bi-cart-check"></i>
+                        <h3>E-commerce &amp; Catálogos</h3>
+                        <p>Vitrines digitais dinâmicas, rápidas e intuitivas, preparadas para mobile shopping e conversão imediata.</p>
+                    </div>
+                </div>
+
+                <!-- Stack de Tecnologias -->
+                <div class="tech-stack">
+                    <h3 class="titulo-stack">Tecnologias e ferramentas que domino</h3>
+                    <div class="tech-grid">
+                        <div class="tech-item flex"><i class="bi bi-filetype-html"></i><span>HTML5</span></div>
+                        <div class="tech-item flex"><i class="bi bi-filetype-css"></i><span>CSS3</span></div>
+                        <div class="tech-item flex"><i class="bi bi-filetype-js"></i><span>JavaScript</span></div>
+                        <div class="tech-item flex"><i class="fa-brands fa-node-js"></i><span>Node.js</span></div>
+                        <div class="tech-item flex"><i class="bi bi-filetype-py"></i><span>Python</span></div>
+                        <div class="tech-item flex"><i class="bi bi-filetype-java"></i><span>Java</span></div>
+                        <div class="tech-item flex"><i class="bi bi-filetype-php"></i><span>PHP</span></div>
+                        <div class="tech-item flex"><i class="bi bi-database"></i><span>SQL</span></div>
+                        <div class="tech-item flex"><i class="bi bi-git"></i><span>Git</span></div>
+                        <div class="tech-item flex"><i class="bi bi-github"></i><span>GitHub</span></div>
+                        <div class="tech-item flex"><i class="fa-brands fa-docker"></i><span>Docker</span></div>
+                        <div class="tech-item flex"><i class="bi bi-shield-lock"></i><span>Segurança Web</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== CERTIFICAÇÕES ==================== -->
+        <section class="certificacoes" id="certificacoes">
+            <div class="interface">
+                <h2 class="titulo">MINHAS <span>CERTIFICAÇÕES</span></h2>
+                <p class="subtitulo">Formação técnica e cursos que comprovam minha base em engenharia de software</p>
+
+                <div class="flex carrossel-cert">
+                    <div class="cert-box efeito-cert1">
+                        <div class="cert-badge">
+                            <i class="bi bi-patch-check-fill"></i>
+                        </div>
+                        <h3>Programador Web</h3>
+                        <p class="cert-instituicao">Instituto Federal do RS (IFRS)</p>
+                        <p class="cert-info">200 horas • Conclusão: Nov/2024 • Aproveitamento: 80%</p>
+                        <p class="cert-conteudo">HTML5, CSS3, JavaScript, Lógica de Programação, Banco de Dados e Projetos Web.</p>
+                        <a href="#contato" class="cert-link"><i class="bi bi-award"></i> Formação Verificada</a>
+                    </div>
+
+                    <div class="cert-box efeito-cert2">
+                        <div class="cert-badge">
+                            <i class="bi bi-patch-check-fill"></i>
+                        </div>
+                        <h3>Java Completo</h3>
+                        <p class="cert-instituicao">Formação Java (Módulos 1, 2 e 3)</p>
+                        <p class="cert-info">Orientação a Objetos, Collections, Spring Boot, JDBC e Projetos.</p>
+                        <p class="cert-conteudo">Desenvolvimento Java do zero ao avançado com foco em aplicações corporativas reais.</p>
+                        <a href="#contato" class="cert-link"><i class="bi bi-award"></i> Formação Verificada</a>
+                    </div>
+
+                    <div class="cert-box efeito-cert3">
+                        <div class="cert-badge">
+                            <i class="bi bi-patch-check-fill"></i>
+                        </div>
+                        <h3>Python &amp; Automação</h3>
+                        <p class="cert-instituicao">Especialização em Python</p>
+                        <p class="cert-info">Fundamentos, automação web, scripts e lógica aplicada.</p>
+                        <p class="cert-conteudo">Python para desenvolvimento back-end, extração de dados e automação de processos.</p>
+                        <a href="#contato" class="cert-link"><i class="bi bi-award"></i> Formação Verificada</a>
+                    </div>
+
+                    <div class="cert-box efeito-cert4">
+                        <div class="cert-badge">
+                            <i class="bi bi-patch-check-fill"></i>
+                        </div>
+                        <h3>PHP &amp; Back-End</h3>
+                        <p class="cert-instituicao">Desenvolvimento Web Dinâmico</p>
+                        <p class="cert-info">Arquitetura cliente-servidor, banco de dados e segurança.</p>
+                        <p class="cert-conteudo">Criação de sistemas dinâmicos, processamento de formulários e integração de APIs.</p>
+                        <a href="#contato" class="cert-link"><i class="bi bi-award"></i> Formação Verificada</a>
+                    </div>
+                </div>
+                <div class="dica-arraste">Deslize para o lado para ver mais &rarr;</div>
+            </div>
+        </section>
+
+        <!-- ==================== SOBRE ==================== -->
+        <section class="sobre" id="sobre">
+            <div class="interface">
+                <div class="flex">
+                    <div class="img-sobre efeito-img-sobre">
+                        <img src="images/profile.png" alt="Eduardo Gabriel Teixeira">
+                    </div>
+
+                    <div class="txt-sobre efeito-txt-sobre">
+                        <h2>MUITO PRAZER, <span>SOU EDUARDO GABRIEL.</span></h2>
+                        <p>
+                            Minha trajetória na tecnologia começou em <strong>2011</strong>, quando dei meus primeiros passos no desenvolvimento web em um curso de <strong>HTML na Simonsen</strong>. O que começou como curiosidade técnica tornou-se minha profissão.
+                        </p>
+                        <p>
+                            Em 2024, consolidei minha formação concluindo o curso de <strong>Programador Web no IFRS</strong> (200h, com 80% de aproveitamento), além de especializações contínuas pela <strong>Estácio, Udemy e projetos práticos</strong>.
+                        </p>
+                        <p>
+                            <strong>Diferencial Técnico:</strong> Além do desenvolvimento Full-Stack, aprofundo meus estudos em <strong>Segurança da Informação e Auditoria de Sistemas</strong> — garantindo que cada página ou aplicação entregue seja rápida, estável e blindada contra vulnerabilidades.
+                        </p>
+                        <p>
+                            Hoje, ajudo empresas e profissionais a posicionarem suas marcas na internet com <strong>Landing Pages de alta conversão, lojas virtuais e aplicações interativas</strong>.
+                        </p>
+
+                        <div class="btn-social">
+                            <a href="https://github.com/EduardoGabrielT" target="_blank" rel="noopener" aria-label="GitHub"><button type="button"><i class="bi bi-github"></i></button></a>
+                            <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><button type="button"><i class="bi bi-linkedin"></i></button></a>
+                            <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><button type="button"><i class="bi bi-instagram"></i></button></a>
+                            <a href="https://youtube.com/" target="_blank" rel="noopener" aria-label="YouTube"><button type="button"><i class="bi bi-youtube"></i></button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== PROJETOS ==================== -->
+        <section class="portfolio" id="projetos">
+            <div class="interface">
+                <h2 class="titulo">MEU <span>PORTFÓLIO</span></h2>
+                <p class="subtitulo">Explore meus projetos reais divididos por área de atuação</p>
+
+                <div class="secao-escolha-projetos">
+                    <a href="landing.html" class="btn-categoria">
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <strong>Landing Pages &amp; Web</strong>
+                        <span>Páginas de vendas, vitrines e sistemas focados em conversão</span>
+                        <span class="cta-card">Explorar Projetos <i class="bi bi-arrow-right"></i></span>
+                    </a>
+
+                    <a href="jogos.html" class="btn-categoria">
+                        <i class="fa-solid fa-gamepad"></i>
+                        <strong>Jogos &amp; Interatividade</strong>
+                        <span>Jogos arcade em HTML5 Canvas e lógica avançada em JavaScript</span>
+                        <span class="cta-card">Jogar Agora <i class="bi bi-arrow-right"></i></span>
+                    </a>
+
+                    <a href="projetos.html" class="btn-categoria">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <strong>Catálogo Completo</strong>
+                        <span>Visão geral de todas as aplicações e experimentos em uma única página</span>
+                        <span class="cta-card">Ver Tudo <i class="bi bi-arrow-right"></i></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== DEPOIMENTOS ==================== -->
+        <section class="depoimentos">
+            <div class="interface">
+                <h2 class="titulo">O QUE <span>CLIENTES DIZEM</span></h2>
+                <p class="subtitulo">Feedback real de quem já confiou no meu trabalho</p>
+
+                <div class="flex">
+                    <div class="depoimento-box">
+                        <img src="images/depoimento.jfif" alt="Depoimento de Clientes nas Redes Sociais">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== FORMULÁRIO / CONTATO ==================== -->
+        <section class="formulario" id="contato">
+            <div class="interface">
+                <h2 class="titulo">FALA <span>COMIGO</span></h2>
+                <p class="subtitulo">Tem um projeto em mente? Preencha abaixo e receba um orçamento personalizado.</p>
+
+                <form action="https://formsubmit.co/programador.edu.dev@gmail.com" method="POST">
+                    <input class="efeito-form" type="text" name="name" placeholder="Seu nome completo" required>
+                    <input class="efeito-form1" type="email" name="email" placeholder="Seu melhor e-mail" required>
+                    <input class="efeito-form2" type="tel" name="phone" placeholder="Seu WhatsApp com DDD (opcional)">
+                    <textarea class="efeito-form3" name="message" placeholder="Me conta sobre seu projeto ou necessidade..." required></textarea>
+
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://eduardogabrielt.github.io/portfolio-2-11-26/">
+
+                    <div class="btn-enviar efeito-form4">
+                        <input type="submit" value="Enviar Mensagem">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer>
+        <div class="interface">
+            <div class="line-footer">
+                <div class="flex">
+                    <div class="logo-footer">
+                        <img src="images/logo.jpg" alt="Logo Eduardo Gabriel">
+                    </div>
+                    <div class="btn-social">
+                        <a href="https://github.com/EduardoGabrielT" target="_blank" rel="noopener" aria-label="GitHub"><button type="button"><i class="bi bi-github"></i></button></a>
+                        <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><button type="button"><i class="bi bi-linkedin"></i></button></a>
+                        <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><button type="button"><i class="bi bi-instagram"></i></button></a>
+                        <a href="https://youtube.com/" target="_blank" rel="noopener" aria-label="YouTube"><button type="button"><i class="bi bi-youtube"></i></button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="line-footer borda">
+                <p><i class="bi bi-envelope-fill"></i> <a href="mailto:programador.edu.dev@gmail.com">programador.edu.dev@gmail.com</a></p>
+                <p class="copy">&copy; 2026 Eduardo Gabriel Teixeira. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="Reveal.js"></script>
+    <script src="Menu.js"></script>
+</body>
+</html>

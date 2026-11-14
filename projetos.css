@@ -1,0 +1,270 @@
+/* =========================================
+   ESTILOS DAS PÁGINAS DE PROJETOS, LANDING E JOGOS
+   ========================================= */
+:root {
+    --bg-main: #0a0a0a;
+    --bg-card: #141414;
+    --border-color: #262626;
+    --primary: #00e676;
+    --primary-hover: #00c853;
+    --text-main: #ffffff;
+    --text-muted: #b0b0b0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: rgba(10, 10, 10, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.interface {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+}
+
+.btn-voltar {
+    color: var(--text-main);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s;
+}
+
+.btn-voltar:hover {
+    color: var(--primary);
+}
+
+.nav-atalhos {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-atalhos a {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-atalhos a:hover,
+.nav-atalhos a.ativo {
+    color: var(--primary);
+}
+
+main {
+    flex: 1;
+}
+
+.projetos {
+    padding: 60px 0 80px;
+}
+
+.projetos h2.titulo {
+    color: var(--text-main);
+    font-size: clamp(26px, 4vw, 38px);
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.projetos h2.titulo span {
+    color: var(--primary);
+}
+
+.projetos .subtitle {
+    text-align: center;
+    color: var(--text-muted);
+    margin-bottom: 50px;
+    font-size: 16px;
+}
+
+.categoria-secao {
+    margin-bottom: 65px;
+    scroll-margin-top: 90px;
+}
+
+.subtitulo-categoria {
+    color: var(--primary);
+    font-size: 22px;
+    margin-bottom: 25px;
+    border-left: 4px solid var(--primary);
+    padding-left: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Grid Responsivo de Cards */
+.flex {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 28px;
+}
+
+.img-port {
+    height: 420px;
+    position: relative;
+    border-radius: 14px;
+    overflow: hidden;
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+}
+
+.img-port:hover {
+    border-color: var(--primary);
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 230, 118, 0.2);
+}
+
+.img-port img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    transition: transform 0.5s ease;
+}
+
+.img-port:hover img {
+    transform: scale(1.05);
+}
+
+/* Card de Jogo */
+.card-jogo {
+    grid-column: 1 / -1;
+    max-width: 680px;
+    width: 100%;
+    height: 380px;
+    margin: 0 auto;
+    border: 2px solid var(--primary);
+    box-shadow: 0 0 20px rgba(0, 230, 118, 0.2);
+}
+
+.card-jogo img {
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Overlay dos Cards */
+.overlay-port {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(10, 10, 10, 0.2) 0%, rgba(10, 10, 10, 0.95) 85%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 30px 20px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.35s ease;
+}
+
+.img-port:hover .overlay-port {
+    opacity: 1;
+}
+
+.overlay-port p {
+    color: var(--text-main);
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.overlay-port .tech {
+    color: var(--primary);
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 18px;
+}
+
+.links-projeto {
+    display: flex;
+    gap: 12px;
+}
+
+.btn-acao-projeto {
+    background-color: var(--primary);
+    color: var(--bg-main);
+    padding: 10px 22px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.25s ease;
+}
+
+.btn-acao-projeto:hover {
+    background-color: #ffffff;
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 25px 4%;
+    color: #777;
+    border-top: 1px solid var(--border-color);
+    font-size: 14px;
+}
+
+/* Em dispositivos touch/mobile, mostra as informações do card sempre visíveis na base */
+@media (max-width: 768px) {
+    .projetos {
+        padding: 40px 0 60px;
+    }
+
+    .flex {
+        grid-template-columns: 1fr;
+    }
+
+    .img-port,
+    .card-jogo {
+        height: 320px;
+    }
+
+    .overlay-port {
+        opacity: 1;
+        background: linear-gradient(180deg, rgba(10, 10, 10, 0.05) 0%, rgba(10, 10, 10, 0.92) 70%);
+        padding: 20px 15px;
+    }
+
+    .nav-atalhos {
+        gap: 12px;
+    }
+}
